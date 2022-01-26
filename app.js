@@ -1,40 +1,137 @@
+function Hello(){
 
-let round = prompt("คุณจะเล่นทั้งหมดกี่รอบ")
-for(i= 1; i <=round; i++ ){
-    var answer= prompt("หัว หรือ ก้อย พิมพ์มาเลย")
-    var random_answer = ""
-    if((Math.floor)(Math.random() * 10) <= 4){
+  alert("สวัสดีชาวโลก")
 
-        random_answer = "หัว"
+}
+
+
+
+
+function Tocalsius(fahrenhist){
+
+   
+    let value = (fahrenhist - 32) * 5/9
+    return value.toFixed(2) + " °C"
+  
+}
+// function display(elementID, value){
+//  document.getElementById(elementID).innerHTML = value
+// }
+
+
+function Tofahrenhist(Celsius){
+
+    // let Celsius = prompt("กรุณากรอกข้อมูล : Celsius")
+       let value = (Celsius * 9) / 5 + 32
+       return value.toFixed(2) + " °F"
+   
+   } 
+
+function display2(elementID, value){
+    document.getElementById(elementID).innerHTML = value
+   }
+
+
+   function TocalsiusProgram(value){
+       alert(Tocalsius(value))
+   }
+
+   function fahrenhistProgram(value){
+    alert(Tofahrenhist(value))
+}
+
+
+
+
+
+
+
+
+
+
+
+// function seyHello(userName, lastName){
+
+//     return " Hello " + userName + " " + lastName
+
+// }
+// function Getage(){
+
+//     return 25
+// }
+// let userInput = prompt("Input your name :")
+
+// alert(seyHello(userInput , " Kinglek")) 
+
+
+
+
+// function SayHello() {
+
+//     alert("Hello")
+
+// }
+// SayHello()
+
+
+
+
+
+
+
+
+
+// while(prompt("ถ้าจะออกพิมพ์ OK") != "OK"){
+//     document.getElementById("result").innerHTML += " ไม้ได้กด OK " +"<br>"
+
+// }
+
+
+
+
+
+
+
+// หัวก้อย
+// let round = prompt("คุณจะเล่นทั้งหมดกี่รอบ")
+// for(i= 1; i <=round; i++ ){
+//     var answer= prompt("หัว หรือ ก้อย พิมพ์มาเลย")
+//     var random_answer = ""
+//     if((Math.floor)(Math.random() * 10) <= 4){
+
+//         random_answer = "หัว"
         
-    }
-        // หัว
+//     }
+//         // หัว
        
-        else{
+//         else{
 
-            random_answer = "ก้อย"
+//             random_answer = "ก้อย"
 
-        }
-        if(answer == random_answer){
-            alert("ตอบถูกยินดีด้วย !")
+//         }
+//         if(answer == random_answer){
+//             alert("ตอบถูกยินดีด้วย !")
 
-        }
-        else{
+//         }
+//         else{
 
-            alert("เสียใจด้วยคุณตอบผิด !")
+//             alert("เสียใจด้วยคุณตอบผิด !")
 
            
 
-        }
+//         }
 
-        console.log(random_answer +" : " + answer)
+//         console.log(random_answer +" : " + answer)
 
         
 
-        document.getElementById("game-list").innerHTML =  answer
-        document.getElementById("result").innerHTML =  "คำตอบที่ถูกต้อง: " + random_answer
+//         document.getElementById("game-list").innerHTML =  answer
+//         document.getElementById("result").innerHTML =  "คำตอบที่ถูกต้อง: " + random_answer
 
-}
+// }
+
+
+
 
 
 
